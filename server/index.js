@@ -85,7 +85,7 @@ server.post('/logout', (_req, res) => {
 server.post('/protected', async (req, res) => {
   try {
     const userId = isAuth(req);
-    if (!userId !== null) {
+    if (userId !== null) {
       res.send({
         data: 'This is protected Data',
       });
