@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server/index.js",
-    "start:frontend": "parcel client/index.html --out-dir build",
+    "start:frontend": "parcel client/index.html --out-dir build --port 4000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -56,18 +56,7 @@
     "stylelint-config-styled-components": "^0.1.1",
     "stylelint-processor-styled-components": "^1.10.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
+
   "babel": {
     "presets": [
       "@babel/preset-env",
