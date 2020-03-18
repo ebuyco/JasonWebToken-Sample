@@ -9,7 +9,7 @@ const Protected = () => {
   useEffect(() => {
     async function fetchProtected() {
       const result = await (
-        await fetch('http://localhost:4000/protected', {
+        await fetch('http://localhost:3000/protected', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

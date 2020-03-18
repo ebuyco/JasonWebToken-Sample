@@ -14,7 +14,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
 
   const logOutCallback = async () => {
-    await fetch('http://localhost:4000/logout', {
+    await fetch('http://localhost:3000/logout', {
       method: 'POST',
       credentials: 'include', // Needed to include the cookie
     });
@@ -46,7 +46,7 @@ const App = () => {
 
   return (
     <UserContext.Provider value={[user, setUser]}>
-      <div className="app">
+       <div className="app">
         <Navigation logOutCallback={logOutCallback} />
         <Router id="router">
           <Login path="login" />

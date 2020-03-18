@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "pre:start": "react-scripts start",
     "start": "nodemon server/index.js",
-    "start:frontend": "parcel client/index.html --out-dir build --port 4000",
+    "start:frontend": "parcel client/index.html --out-dir build --port 3000",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

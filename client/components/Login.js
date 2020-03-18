@@ -11,7 +11,7 @@ const Login = () => {
   const handleSubmit = async e => {
     e.preventDefault();
     const result = await (
-      await fetch('http://localhost:4000/login', {
+      await fetch('http://localhost:3000/login', {
         method: 'POST',
         credentials: 'include',
         headers: {
